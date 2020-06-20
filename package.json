@@ -1,26 +1,23 @@
 {
   "name": "neoclients-api",
   "version": "1.0.0",
-  "description": "",
+  "description": "An client management service",
   "main": "src/app.js",
   "scripts": {
-    "integration": "NODE_ENV=test mocha 'tests/integration/**/*.test.js' --timeout 10000",
-    "unit": "NODE_ENV=test mocha 'tests/unit/**/*.test.js' --timeout 5000",
-    "test": "npm run unit && npm run integration",
-    "dev": "nodemon src/app.js -L --verbose",
-    "start": "node src/app.js"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon src/app.js -L --verbose"
   },
-  "author": "",
+  "author": "Felipe Videira",
   "license": "ISC",
   "dependencies": {
     "cors": "^2.8.5",
     "express": "^4.17.1",
-    "neode": "^0.3.2",
-    "nodemon": "^2.0.1"
+    "neode": "^0.3.2"
   },
   "devDependencies": {
-    "mocha": "^6.2.2",
-    "supertest": "^4.0.2",
-    "chai": "^4.2.0"
+    "nodemon": "^2.0.1"
+  },
+  "engines": {
+    "node": "12.x"
   }
 }

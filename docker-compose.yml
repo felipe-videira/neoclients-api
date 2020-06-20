@@ -13,13 +13,13 @@ services:
     build: .
     command: npm start
     ports:
-      - ${API_PORT}:${API_PORT}
+      - ${PORT}:${PORT}
     volumes:
       - ./src:/usr/app/api/src
     depends_on:
       - neo4j
     environment:
-      - API_PORT=${API_PORT}
+      - PORT=${PORT}
       - NEO4J_PROTOCOL=${NEO4J_PROTOCOL}
       - NEO4J_HOST=${NEO4J_HOST}
       - NEO4J_PORT=${NEO4J_PORT}

@@ -5,7 +5,7 @@ const dbMiddleware = require('./middlewares/db');
 
 const app = express();
 const db = require('./database')();
-const PORT = process.env.API_PORT;
+const PORT = process.env.PORT || 8080;
 
 app.use(cors());
 app.use(express.json());
