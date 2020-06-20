@@ -8,7 +8,6 @@ module.exports = {
         type: 'string',
         unique: true,
         required: true,
-        index: true
     },
     name: {
         type: 'string',
