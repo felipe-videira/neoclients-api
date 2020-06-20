@@ -1,5 +1,5 @@
 # Neoclients API
-An client management service. Also check the [Neoclients Web](https://github.com/felipe-videira/neoclients-web)
+An client management service. Also check the [Neoclients Web](https://github.com/felipe-videira/neoclients-web).
 
 ## Table of Contents
 
