@@ -1,8 +1,8 @@
 version: "3"
 
 services:
-  db:
-    image: neo4j:latest
+  neo4j:
+    image: neo4j:3.5.17
     ports:
       - "7474:7474"
       - "7687:7687"
@@ -17,10 +17,10 @@ services:
     volumes:
       - ./src:/usr/app/api/src
     depends_on:
-      - db
+      - neo4j
     environment:
       - API_PORT=${API_PORT}
       - NEO4J_PROTOCOL=${NEO4J_PROTOCOL}
       - NEO4J_HOST=${NEO4J_HOST}
       - NEO4J_PORT=${NEO4J_PORT}
-      - NEO4J_ENCRYPTION=${NEO4J_ENCRYPTION}
+      - NEO4J_ENCRYPTION=ENCRYPTION_OFF
