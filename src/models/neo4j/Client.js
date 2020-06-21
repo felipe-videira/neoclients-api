@@ -29,7 +29,8 @@ module.exports = {
     },
     telephone: {
         type: 'string',
-        length: 10
+        length: 10,
+        allow: ['', null]
     },
     deleted: {
         type: 'boolean',
