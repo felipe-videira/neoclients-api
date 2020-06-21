@@ -22,7 +22,7 @@ module.exports = {
     get: async (db, modelName, query, orderBy, limit, skip) => {
         const res = await db.all(modelName, {
             deleted: false,
-            ...query,
+            ...(query || {}),
         }, orderBy, limit, skip)
 
         if (!res) return;
