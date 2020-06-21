@@ -9,7 +9,11 @@ module.exports = {
         unique: true,
         required: true,
     },
-    name: {
+    firstName: {
+        type: 'string',
+        required: true,
+    },
+    lastName: {
         type: 'string',
         required: true,
     },
